@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  scrollbar-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #f3f002;
+  border-radius: 5px 0 0 5px;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #f3c703;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 8, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("./eduford_img/back.jpg");
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 1% 2% 0% 2%;
+  justify-content: center;
+  align-items: center;
+}
+
+nav img {
+  width: 100px;
+  height: 40px
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+  padding-left: 100px ;
+  padding-right: 100px;
+}
+.sp{
+  display: inline;
+  color: rgb(219, 170, 7);
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.visit-us-home-button {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.visit-us-home-button:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 0.5s;
+}
+.redbtn {
+  border: 1px solid #f44336;
+  background: transparent;
+  color: #f44336;
+  transition: 0.5s;
+}
+.redbtn:hover {
+  color: white;
+}
+nav .fas {
+  display: none;
+}
+nav .fas.fa-chevron-circle-down {
+  display: contents;
+}
+.morebutton .fa-times {
+  display: block;
+  color: white;
+  margin-left: 175px;
+  padding-top: 20px;
+}
+.morebutton {
+  position: absolute;
+  background: #f44336;
+  height: 100vh;
+  width: 200px;
+  top: 0%;
+  left: -200%;
+  text-align: left;
+  z-index: 10;
+  transition: 1s;
+  border-radius: 0 10px 10px 0;
+}
+.more {
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+.morebutton ul {
+  padding: 30px;
+}
+.morebutton ul li {
+  display: block;
+  padding-top: 30px;
+  position: relative;
+}
+.morebutton ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.morebutton ul li ul{
+  display: none;
+  
+  margin-left: -20px;
+  position: absolute;
+  background-color: #f44336;
+  z-index: 3;
+  border-radius: 10px;transition: 5s;
+}
+.morebutton ul li:hover ul{
+  display: block;
+  
+}
+.morebutton ul li ul li{margin-top: -10px;width: 120px;}
+.morebutton ul li ul li a:hover{
+  background: white;
+  padding: 10px;
+  color:#f44336;
+  border-radius: 10px;
+  margin: 0;
+}
+.morebutton ul li ul li a{
+  color: white;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0%;
+    left: -200%;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  .morebutton {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0%;
+    left: -200%;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+  }
+  nav .fas {
+    display: block;
+    color: white;
+    margin-left: 175px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav .fa-bars {
+    margin-right: 3px;
+  }
+} /*media end*/
+/*----------course section-----------*/
+.whatwedo{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+ .whatwedo h1::after{
+   
+  content: "";
+  width: 15%;
+  height: 5px;
+  background: rgb(212, 169, 26);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+ } 
+.whatwedo h1:hover::after {
+  width: 20%;}
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+.whatwedo p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 5px;
+  text-align: left;
+  
+  text-align: left;
+}
+.whatwedo h3{
+  text-align: left;
+}
+.whatwedo.column{
+  width: 50%;
+  display: inline-block;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.story {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 8, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("./eduford_img/mot.jpg");
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.chandan {
+    background:url(eduford_img/chandan.jpg) no-repeat;
+    background-size: 100% 100%;  
+    padding: 10px;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+}
+.scalecolumns h3{
+  text-align: center;
+}
+.comment-box {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 20px;
+}
+.comment-box h3 {
+  text-align: left;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+}
+.comment-form button {
+  margin: 10px 0;
+}
+.contact h1::after{
+   
+  content: "";
+  width: 15%;
+  height: 5px;
+  background: rgb(212, 169, 26);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+  text-align:center
+
+ } 
+.contact h1:hover::after {
+  width: 20%;}
